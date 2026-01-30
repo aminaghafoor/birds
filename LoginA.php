@@ -62,6 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="input-group">
     <h2>User Login:</h2>
+    <h2>User Login:</h2>
     <form action="LoginA.php" method="post">
 </div>
 
