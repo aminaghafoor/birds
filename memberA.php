@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'member') {
-    header("Location: loginN.php");
+    header("Location: login.php");
     exit();
 }
   
@@ -82,8 +82,8 @@ $result = $stmt->get_result();
   </div>
 
 <div class="post-actions">
-   <button class="new-button" onclick="editPost(<?= $row['id'] ?>)">Edit</button>
-   <button class="new-button" onclick="deletePost(<?= $row['id'] ?>)">Delete</button>
+   <button class="new-button" onclick="eP(<?= $row['id'] ?>)">Edit</button>
+   <button class="new-button" onclick="dP(<?= $row['id'] ?>)">Delete</button>
  </div> 
 
 </div>

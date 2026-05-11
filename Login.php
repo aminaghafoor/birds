@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <li><a href="index.html">Home</a></li>
         <li><a href="ViewPosts.php">view posts</a></li>
         <li><a href="RegisterA.php">Register</a></li>
-        <li><a href="LoginN.php">Login</a></li>
+        <li><a href="Login.php">Login</a></li>
          <li><a href="CTO.php">Learn More</a></li>
     </ul>
 </nav>
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
   <div class="input-group">
     <h2>User Login:</h2>
-    <form action="LoginN.php" method="post">
+    <form action="Login.php" method="post">
 </div>
     
     <div class="input-group">
@@ -126,7 +126,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </footer>
   
     
-
    <div class="bottom-footer">
     <p> © 2025 Centrala Trust for Ornithology. <br>
        All Rights Reserved.  <br>

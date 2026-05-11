@@ -20,7 +20,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="ViewPosts.php">view posts</a></li>
         <li><a href="RegisterA.php">Register</a></li>
-        <li><a href="LoginN.php">Login</a></li>
+        <li><a href="Login.php">Login</a></li>
          <li><a href="CTO.php">Learn More</a></li>
     </ul>
 </nav>

@@ -1,4 +1,4 @@
-function deletePost(id) {
+function dP(id) {
   if (!confirm("Are you sure you want to delete this post?")) return;
 
   fetch("deleteA.php?id=" + id)
@@ -9,7 +9,7 @@ function deletePost(id) {
     });
 }
 
-function editPost(id) {
+function eP(id) {
   const postDiv = document.getElementById("post-" + id);
   const commentSpan = postDiv.querySelector(".comment");
   const currentComment = commentSpan.textContent;

@@ -141,9 +141,6 @@ select {
     width: 65vw; /* responsive width */
   }
 }
-#uploadform {
-  position: center;
-}
 .form {
   background-color: white;
   width: 1210px;
@@ -167,7 +164,7 @@ select {
 .section-text h1 {
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 3opx;
+  margin-bottom: 30px;
 }
 .section-text p {
   font-size: 1.25rem;
@@ -299,34 +296,43 @@ select {
     font-size: 1.1rem;
   }
 }
+/* Parent container: section-gallery */
+.section-gallery {
+  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* Each gallery div in the section-gallery */
 .gallery {
-  background-color: white;
-  flex: 1 1 300px;
-  max-width: 300px;
-  margin: 20px;
-  border: solid black 1px;
-  border-radius: 12px;
-  gap: 5px;
+  flex: 1 1 calc(25% - 10px);
+  box-sizing: border-box;
   text-align: center;
 }
+/* Images inside .gallery div */
 .gallery img {
   width: 100%;
   height: 210px;
   object-fit: cover;
   display: block;
   border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 .gallery img:hover {
   transform: scale(1.03);
-  transition: 0.3s ease;
 }
-.section-gallery {
-  border: solid 1px black;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
+@media (max-width: 768px) {
+  .gallery {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    flex: 1 1 100%;
+  }
 }
 .footer {
   display: flex;
@@ -347,9 +353,7 @@ select {
   width: 1250px;
   height: 10vh;
   background-color: gainsboro;
-  border-top:
-    solid 1px,
-    black;
+  border-top: 1px solid black;
   padding: 15px;
   font-size: 14px;
 }
